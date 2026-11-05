@@ -41,7 +41,7 @@ Hermes 有两个斜杠命令入口，均由 `hermes_cli/commands.py` 中的中�
 | `/history` | 显示对话历史 |
 | `/save` | 保存当前对话 |
 | `/retry` | 重试最后一条消息（重新发送给 agent） |
-| `/undo` | 移除最后一轮用户/助手对话；开启检查点时（默认）同时还原该轮写入的文件 |
+| `/undo` | 移除最后一轮用户/助手对话；开启检查点时（`checkpoints.enabled: true` 或 `--checkpoints`）同时还原该轮写入的文件 |
 | `/title` | 为当前会话设置标题（用法：/title My Session Name） |
 | `/compress [focus topic]` | 手动压缩对话上下文（刷新记忆 + 摘要）。可选的焦点主题可缩小摘要保留的范围。 |
 | `/rollback` | 列出或恢复文件系统检查点（用法：/rollback [number]） |

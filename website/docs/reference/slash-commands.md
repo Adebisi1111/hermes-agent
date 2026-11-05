@@ -42,7 +42,7 @@ Type `/` in the CLI to open the autocomplete menu. Built-in commands are case-in
 | `/save` | Save the current conversation |
 | `/prompt` (alias: `/compose`) | Compose your next prompt in `$EDITOR` (markdown) instead of the inline input — useful for long, multi-line, or carefully-formatted prompts. |
 | `/retry` | Retry the last message (resend to agent) |
-| `/undo` | Remove the last user/assistant exchange; with checkpoints on (default) also reverts the files that turn wrote |
+| `/undo` | Remove the last user/assistant exchange; with checkpoints on (`checkpoints.enabled: true` or `--checkpoints`) also reverts the files that turn wrote |
 | `/title` | Set a title for the current session (usage: /title My Session Name) |
 | `/compress [here [N] \| focus topic]` | Manually compress conversation context (flush memories + summarize). `/compress here [N]` summarizes everything except the most recent N exchanges (default 2), kept verbatim — pick your own compression boundary. A focus topic narrows what a full summary preserves. |
 | `/rollback` | List or restore filesystem checkpoints (usage: /rollback [number]) |
